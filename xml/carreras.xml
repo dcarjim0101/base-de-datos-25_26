@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carreras>
+    <carrera>
+        <Nombre>Maratón Costa del Sol</Nombre>
+        <Ciudad>Málaga</Ciudad>
+        <Distancia>42195</Distancia>
+        <MesCelebracion>10</MesCelebracion>
+    </carrera>
+
+    <carrera>
+        <Nombre>Media Maratón Sierra de Cádiz</Nombre>
+        <Ciudad>Ubrique</Ciudad>
+        <Distancia>21097</Distancia>
+        <MesCelebracion>5</MesCelebracion>
+    </carrera>
+</carreras>

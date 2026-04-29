@@ -1,0 +1,9 @@
+maratoon.registros
+
+# 1.
+nombre, apellidos, ciudad, fechanacimiento, sexo, club_id
+"Carlos"; "López Martín"; "Sevilla"; "1995-03-12"; "H"; 3
+"Ana"; "Sánchez Ruiz"; "Jerez"; "1988-07-22"; "M"; 5
+"Miguel"; "Torres Gómez"; "Cádiz"; "2001-11-05"; "H"; 2
+"Lucía"; "Navarro Díaz"; "Arcos"; "1979-01-30"; "M"; 4
+"David"; "Castro Romero"; "Ubrique"; "1968-09-18"; "H"; 1
