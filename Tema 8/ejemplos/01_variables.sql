@@ -1,3 +1,4 @@
+-- variables
 SET @numero_2 = 2;
 SELECT @numero_1 + @numero_2;
 
