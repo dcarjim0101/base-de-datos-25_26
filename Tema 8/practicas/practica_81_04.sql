@@ -46,5 +46,22 @@ BEGIN
     WHERE c.saldo <= 200;
 END $$
 DELIMITER ;
+
 -- uso del procedimiento
 CALL SaldosBajos();
+
+-- ejercicio 5
+DELIMITER $$
+DROP PROCEDURE IF EXISTS SaldoTotalPorCliente $$
+CREATE PROCEDURE bancos.SaldoTotalPorCliente()
+BEGIN
+    SELECT cl.id_cliente, cl.nombre, cl.apellidos, cl.dni, cl.ciudad, SUM(c.saldo) AS saldo_total
+    FROM clientes cl
+    JOIN cuentas c ON cl.id_cliente = c.id_cliente
+    GROUP BY cl.id_cliente
+    ORDER BY cl.nombre, cl.apellidos;
+END $$
+DELIMITER ;
+
+-- uso del procedimiento
+CALL SaldoTotalPorCliente();
