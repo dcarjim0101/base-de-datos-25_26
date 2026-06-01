@@ -46,10 +46,10 @@ INSERT INTO cuentas VALUES
 DROP TABLE IF EXISTS movimientos;
 CREATE TABLE IF NOT EXISTS movimientos(
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    cuenta_id INT UNSIGNED REFERENCES cuentas (id),
+    cuenta_id INT UNSIGNED REFERENCES cuentas (codcuenta),
     fechahora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     concepto VARCHAR(50),
-    tipo CHAR(1) CHECK (tipo IN('I','R')),
+    tipo CHAR(1) CHECK (tipo IN('I','R', ' ')),
     cantidad DECIMAL(10, 2 )
 );
 
